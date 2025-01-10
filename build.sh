@@ -1,10 +1,11 @@
 #!/bin/bash
 
-npm run tsp -- compile .
+npm run tsp -- compile ./spec
+
 # Build the project
 docker run --rm \
   -v $PWD:/spec \
   redocly/cli \
   build-docs \
-  ./tsp-output/@typespec/openapi3/openapi.yaml \
-  -o ./openapi.html
+  ./openapi/api.yaml \
+  -o ./api.html
