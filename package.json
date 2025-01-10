@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "tsp": "tsp",
-    "dev:watch": "tsp compile . --watch"
+    "dev:watch": "tsp compile ./spec --watch"
   },
   "peerDependencies": {
     "@typespec/compiler": "latest",
